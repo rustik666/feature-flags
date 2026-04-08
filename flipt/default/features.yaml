@@ -6,7 +6,11 @@ flags:
     - key: test-boolean
       name: Test Boolean
       type: BOOLEAN_FLAG_TYPE
-      enabled: false
+      enabled: true
+      rollouts:
+        - threshold:
+            percentage: 20
+            value: true
 segments:
     - key: test-segment
       name: Test Segment
