@@ -10,4 +10,9 @@ flags:
 segments:
     - key: test-segment
       name: Test Segment
+      constraints:
+        - type: STRING_COMPARISON_TYPE
+          property: id
+          operator: eq
+          value: test
       match_type: ALL_MATCH_TYPE
